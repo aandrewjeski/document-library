@@ -74,3 +74,8 @@ Never merge feature branches directly to master. Feature branches should go thro
 7. Thou shalt name your branches in lowercase snake string
 
 # Existing projects
+
+## Adam's Pavlok-Git Summary
+* Pavlok operates on best version control practices using git.
+* Best practices involves branching early and often whenever a feature or feature update is made. Especially when two people are working on the same feature.
+* Version control keeps project team members on the same page and keeps the workflow organized, neat, and traceable.
