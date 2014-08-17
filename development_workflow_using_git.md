@@ -73,9 +73,24 @@ Never merge feature branches directly to master. Feature branches should go thro
 6. Thou shalt not push directly to master.
 7. Thou shalt name your branches in lowercase snake string
 
+## Pavlok and Git Branching: Keeping Things Organized
+Branching is essential to the work flow of a project. Allowing each contributer to have their own branch for features keeps things clean and prevents from polluting the master with bugs and missing out on team approval.
+
+The more organized the branching system, the more closely the code can be tracked and patched. At Pavlok, using this system will help to make sure that mishaps do not make it into the product which is vital to our success.
+
+### Master and Integration Branches
+The master branch is the core of a branching scheme. The master branch should never be directly committed to. It is only for stable version releases that contain no bugs or failing tests.
+
+The development branch is work in progress. When new features are ready to go, a pull request is made. After all contributers validate it, it is merged into master and the new commit on master is called a version release.
+
+### Features and Hotfixes
+A feature is any new major addition to the functionality or support of the software. Features are branched off of the integration branch and are merged when the feature is polished.This generally will be the type of branch most frequently worked on.
+
+A hotfix branch is an extraordinary case of branching that happens when a bug or technicality is discovered in a working version. To patch the problem, hotfix is branched directly off of master to quickly solve the problem.
+
+### Release Branches
+Release branches are not always necessary, but provide additional support before a feature is integrated to a new version in master. This branch allows for a last lookover for bugs and small mishaps before the merge. Once a bug is patched, the release branch can be merged into master.
+
 # Existing projects
 
-## Adam's Pavlok-Git Summary
-* Pavlok operates on best version control practices using git.
-* Best practices involves branching early and often whenever a feature or feature update is made. Especially when two people are working on the same feature.
-* Version control keeps project team members on the same page and keeps the workflow organized, neat, and traceable.
+
